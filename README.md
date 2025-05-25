@@ -1,6 +1,6 @@
 # CHARACTERIZATION OF A HIGH-FREQUENCY AMPLIFIER USING S-PARAMETERS IN 5G NETWORKS
 
-📖 1. Introduction
+## 📖 1. Introduction
 
 ## 🔬 2. Understanding Two-Port Networks and S-Parameters
 
@@ -21,7 +21,7 @@
 
  ![image](https://github.com/user-attachments/assets/9acab39c-26e6-4a03-b917-b4abd47a59fd)
 
- ##📖 1. Introduction
+## 📖 1. Introduction
  
 The rapid evolution of wireless technology has revolutionized the way we connect, communicate, and interact with digital systems. Among these advancements, 5G technology stands out as a game changer, offering ultra-fast data rates, minimal latency, and support for a massive number of connected devices. Operating at millimeter-wave frequencies like 28 GHz, 5G demands high-performance RF components that can operate reliably under stringent conditions.
 
@@ -30,7 +30,7 @@ A cornerstone component in any RF system is the amplifier, which enhances weak s
 This report delves into the real-world characterization of a high-frequency amplifier intended for 5G applications using S-parameters. Through theoretical insights, complex number conversions, MATLAB-based simulation, and performance analysis, we aim to present a robust understanding of this essential process.
 
 
-🔬 2. Understanding Two-Port Networks and S-Parameters
+## 🔬 2. Understanding Two-Port Networks and S-Parameters
 
 ![image](https://github.com/user-attachments/assets/6f3ada22-7f29-4d8d-b9d3-96a483bc8752)
 
@@ -47,7 +47,7 @@ At high frequencies, electrical behavior is more accurately described in terms o
 These values are frequency-dependent and typically presented in magnitude and phase.
 
 
-📡 3. Application Scenario: 28 GHz Amplifier in 5G Base Station
+## 📡 3. Application Scenario: 28 GHz Amplifier in 5G Base Station
 
 In a typical 5G base station, signals transmitted and received at 28 GHz suffer high propagation losses. Amplifiers in this band must provide substantial gain while maintaining linearity and avoiding instability.
 
@@ -61,8 +61,7 @@ Let’s consider a real-world example: a power amplifier module designed for the
 We will now analyze these parameters to determine gain, return loss, and unconditional stability.
 
 
-📐 4. Converting to Complex Form and Mathematical Analysis
-
+## 📐 4. Converting to Complex Form and Mathematical Analysis
 To begin, we convert the polar form S-parameters into rectangular (complex) form:
 
 S11 = 0.433 - j0.25
@@ -79,7 +78,7 @@ K = (1 - |S11|² - |S22|² + |Δ|²) / (2 × |S12 × S21|) ≈ 1.724
 Since K > 1 and |Δ| < 1, the amplifier is unconditionally stable.
 
 
- 📊 5. Performance Metrics
+## 📊 5. Performance Metrics
  
 Gain, return loss, and reverse isolation are calculated from the S-parameters:
 
@@ -91,7 +90,7 @@ Gain, return loss, and reverse isolation are calculated from the S-parameters:
 These metrics confirm that the amplifier is suitable for integration into mmWave front-ends.
 
 
-💻 6. MATLAB-Based Simulation
+## 💻 6. MATLAB-Based Simulation
 
 Simulating and verifying the S-parameter analysis in MATLAB is a common practice. Here’s a basic script used:
 
@@ -103,8 +102,7 @@ This code outputs the amplifier’s essential characteristics and validates our 
 
  
 
-🌐 7. Real-World Importance in 5G Systems
-
+## 🌐 7. Real-World Importance in 5G Systems
 In a high-frequency environment, accurate modeling using S-parameters directly influences device performance. Real-time system benefits include:
 
 - Lower Power Consumption: Efficient impedance matching leads to less signal reflection and power loss.
@@ -113,14 +111,14 @@ In a high-frequency environment, accurate modeling using S-parameters directly i
 
 Such amplifiers are used in small cells, beamforming modules, phased array antennas, and repeaters—all critical components of 5G networks.
 
-🧾 8. Conclusion
+## 🧾 8. Conclusion
 
 This report has highlighted the significance of using S-parameters to characterize high-frequency amplifiers, particularly for 5G applications operating at 28 GHz. By applying complex analysis, gain and return loss calculations, and stability checks, we’ve shown how a seemingly abstract set of parameters maps directly to real-world performance metrics.
 
 With powerful tools like MATLAB, engineers can verify theoretical designs and fine-tune RF circuits, ensuring devices meet the demanding requirements of next-generation communication systems.
 
 
-📚 9. References
+## 📚 9. References
 1. David M. Pozar, Microwave Engineering, Wiley, 4th Edition.
 2. R.E. Collin, Foundations for Microwave Engineering, IEEE Press.
 3. Keysight Technologies – Vector Network Analyzer Primer.
