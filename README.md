@@ -94,7 +94,33 @@ These metrics confirm that the amplifier is suitable for integration into mmWave
 
 Simulating and verifying the S-parameter analysis in MATLAB is a common practice. Here’s a basic script used:
 
-<pre><code>```matlab % MATLAB Code to analyze S-parameters of a 28 GHz amplifier S11 = 0.5 * exp(-1j * deg2rad(30)); S21 = 4.5 * exp(1j * deg2rad(60)); S12 = 0.05 * exp(1j * deg2rad(10)); S22 = 0.4 * exp(-1j * deg2rad(45)); Delta = S11 * S22 - S12 * S21; K = (1 - abs(S11)^2 - abs(S22)^2 + abs(Delta)^2) / (2 * abs(S12 * S21)); Gain_dB = 20 * log10(abs(S21)); RL_in = -20 * log10(abs(S11)); RL_out = -20 * log10(abs(S22)); fprintf('Gain = %.2f dB\n', Gain_dB); fprintf('RL_in = %.2f dB\n', RL_in); fprintf('RL_out = %.2f dB\n', RL_out); fprintf('Stability Factor K = %.2f\n', K); ```</code></pre>
+```% Define S-parameters in polar form and convert to complex numbers
+S11 = 0.5 * exp(-1j * deg2rad(30));
+S21 = 4.5 * exp(1j * deg2rad(60));
+S12 = 0.05 * exp(1j * deg2rad(10));
+S22 = 0.4 * exp(-1j * deg2rad(45));
+
+% Calculate the determinant Δ of the S-parameter matrix
+Delta = S11 * S22 - S12 * S21;
+
+% Calculate the stability factor K using Rollett's stability criterion
+K = (1 - abs(S11)^2 - abs(S22)^2 + abs(Delta)^2) / (2 * abs(S12 * S21));
+
+% Calculate gain in dB
+Gain_dB = 20 * log10(abs(S21));
+
+% Calculate input return loss in dB
+RL_in = -20 * log10(abs(S11));
+
+% Calculate output return loss in dB
+RL_out = -20 * log10(abs(S22));
+
+% Display results in the MATLAB command window
+fprintf('Gain = %.2f dB\n', Gain_dB);
+fprintf('Input Return Loss (RL_in) = %.2f dB\n', RL_in);
+fprintf('Output Return Loss (RL_out) = %.2f dB\n', RL_out);
+fprintf('Stability Factor (K) = %.2f\n', K);
+```
 
 This code outputs the amplifier’s essential characteristics and validates our manual calculations.
 
