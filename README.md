@@ -21,7 +21,7 @@
 
  ![image](https://github.com/user-attachments/assets/9acab39c-26e6-4a03-b917-b4abd47a59fd)
 
- 📖 1. Introduction
+ ###📖 1. Introduction
  
 The rapid evolution of wireless technology has revolutionized the way we connect, communicate, and interact with digital systems. Among these advancements, 5G technology stands out as a game changer, offering ultra-fast data rates, minimal latency, and support for a massive number of connected devices. Operating at millimeter-wave frequencies like 28 GHz, 5G demands high-performance RF components that can operate reliably under stringent conditions.
 
@@ -113,7 +113,7 @@ In a high-frequency environment, accurate modeling using S-parameters directly i
 
 Such amplifiers are used in small cells, beamforming modules, phased array antennas, and repeaters—all critical components of 5G networks.
 
-##🧾 8. Conclusion
+🧾 8. Conclusion
 
 This report has highlighted the significance of using S-parameters to characterize high-frequency amplifiers, particularly for 5G applications operating at 28 GHz. By applying complex analysis, gain and return loss calculations, and stability checks, we’ve shown how a seemingly abstract set of parameters maps directly to real-world performance metrics.
 
