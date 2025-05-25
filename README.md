@@ -1,6 +1,26 @@
 # CHARACTERIZATION OF A HIGH-FREQUENCY AMPLIFIER USING S-PARAMETERS IN 5G NETWORKS
-Characterization of a High-Frequency Amplifier Using S-Parameters in 5G Networks
- 
+
+## 📖 1. Introduction
+
+## 🔬 2. Understanding Two-Port Networks and S-Parameters
+
+## 📡 3. Application Scenario: 28 GHz Amplifier in 5G Base Station
+
+## 📐 4. Converting to Complex Form and Mathematical Analysis
+
+## 📊 5. Performance Metrics
+
+## 💻 6. MATLAB-Based Simulation
+
+## 🌐 7. Real-World Importance in 5G Systems
+
+## 🧾 8. Conclusion
+
+## 📚 9. References
+
+
+ ![image](https://github.com/user-attachments/assets/9acab39c-26e6-4a03-b917-b4abd47a59fd)
+
 1. Introduction
 The rapid evolution of wireless technology has revolutionized the way we connect, communicate, and interact with digital systems. Among these advancements, 5G technology stands out as a game changer, offering ultra-fast data rates, minimal latency, and support for a massive number of connected devices. Operating at millimeter-wave frequencies like 28 GHz, 5G demands high-performance RF components that can operate reliably under stringent conditions.
 
